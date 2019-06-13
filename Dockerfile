@@ -1,14 +1,15 @@
 FROM debian:sid-slim
 
-RUN apt-get update
-RUN apt-get install -y pandoc
-RUN apt-get install -y texlive-latex-base
-RUN apt-get install -y texlive-latex-extra
-RUN apt-get install -y texlive-fonts-recommended
-RUN apt-get install -y texlive-fonts-extra
-RUN apt-get install -y python3
-RUN apt-get install -y python3-pip
-RUN apt-get install -y git
+RUN apt-get update && \
+    apt-get install -y \
+    pandoc \
+    texlive-latex-base \
+    texlive-latex-extra \
+    texlive-fonts-recommended \
+    texlive-fonts-extra \
+    python3 \
+    python3-pip \
+    git
 
 RUN apt-get autoclean
 
