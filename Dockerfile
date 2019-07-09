@@ -9,6 +9,7 @@ RUN apt-get update && \
     texlive-fonts-extra \
     python3 \
     python3-pip \
+    pipenv \
     git
 
 RUN apt-get autoclean
