@@ -10,6 +10,7 @@ RUN apt-get update && \
     python3 \
     python3-pip \
     pipenv \
+    ghostscript \
     git
 
 RUN apt-get autoclean
